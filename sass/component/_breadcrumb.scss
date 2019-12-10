@@ -1,0 +1,29 @@
+.breadcrumb-section{
+    position: relative;
+    background-size: cover;
+    .breadcrumb-item{
+        color: #fff;
+        z-index: 2;
+        font-size: 19px;
+        a{
+            color: #fff;
+            
+        }
+        &::before{
+            color: #fff;
+            font-size: 19px;
+            padding-left: .5rem;
+        }
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        top:0;
+        right: 0;
+        left: 30%;
+        background: rgba(#bd2130, .6);
+        z-index: 1;
+        
+    }
+}

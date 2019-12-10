@@ -1,0 +1,20 @@
+.doctors{
+    .doctor{
+        background: #fbfbfb;
+        transform: scale(1);
+        transition: transform .4s ease-in-out;
+        &__img{
+            &--img{
+                height: 160px;
+                background-size: cover;
+            }
+        }
+        &__mainInfo {
+            bottom: 0;
+        }
+        &:hover{
+            transform: scale(1.1);
+        }
+        
+    }
+}

@@ -1,0 +1,41 @@
+.navbar-brand{
+    width: 130px;
+}
+
+.menu-btn{
+    span{
+        display: inline-block;
+        width: 30px;
+        height: 2px;
+        border-radius: 10px;
+        background: #535353;
+        position: absolute;
+        left: 30px;
+        &:nth-of-type(2){
+            top: 60px;
+        }
+        &:nth-of-type(3){
+            top: 70px;
+        }
+    }
+}
+#menu{
+    display: none;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    .close-menu{
+        top:50px;
+        left: 50px;
+        font-size: 30px;
+        
+    }
+    .menu-list{
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}

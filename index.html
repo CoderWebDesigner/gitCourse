@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="ar">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>الصفحه الرئيسيه - مجمع مروم الطبي</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- OWL SLIDER -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <!-- Custom css -->
+    <link href="css/style.css" rel="stylesheet" />
+    <style>
+        .owl-carousel {
+            height: 100vh;
+            max-height: 100%;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Start header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"><img src="img/logo1.png" alt="" class="img-fluid"></a>
+            <div class=" navbar-collapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link bg-danger text-white" href="#"> +202- 2258 8810</a>
+                    </li>
+                    <li class="nav-item menu-btn cursor-pointer">
+                        <!-- <a class="nav-link menu-btn" href="#"></a> -->
+                        <a class="nav-link mr-5 " href="#">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+        <div id="menu" class="position-absolute bg-light text-center p-5">
+            <span class="position-absolute close-menu cursor-pointer"><i class="fas fa-times"></i></span>
+            <ul class="list-style-none menu-list">
+                <li class="py-3">
+                    <a href="index.html" class="text-dark font-weight-bold">الرئيسيه</a>
+                </li>
+                <li class="py-3">
+                    <a href="about.html" class="text-dark font-weight-bold">عن مجمع مروم</a>
+                </li>
+                <li class="py-3">
+                    <a href="department.html" class="text-dark font-weight-bold">الاقسام</a>
+                </li>
+                <li class="py-3">
+                    <a href="doctors.html" class="text-dark font-weight-bold">الاطباء</a>
+                </li>
+                <li class="py-3">
+                    <a href="appointment.html" class="text-dark font-weight-bold">حجز موعد</a>
+                </li>
+                <li class="py-3">
+                    <a href="login.html" class="text-dark font-weight-bold">تسجيل الدخول</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- End header -->
+
+    <!-- Start Slider -->
+    <div class="carousel-wrap position-absolute w-100">
+        <div class="owl-carousel" dir="ltr">
+            <div class="item">
+                <img src="img/slider/11058Image.jpg">
+                <div class="description circle text-right">
+                    <div class="details">
+                        <h1 class="text-white mb-5">تصفح الخدمات المتاحه في مركز مروم الطبي</h1>
+                        <a href="department.html" class="btn btn-light rounded-0 py-2 px-4">معرفه الخدمات</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/slider/11059Image.jpg">
+                <div class="description circle text-right">
+                    <div class="details">
+                        <h1 class="text-white mb-5">ترشدك الي صحه افضل مع اكفأ الاطباء</h1>
+                        <a href="appointment.html" class="btn btn-light rounded-0 py-2 px-4">احجز موعد</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Slider -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script>
+        $(".owl-carousel").owlCarousel({
+            items: 1,
+            loop: true,
+            autoplay: true,
+            autoplayHoverPause: false,
+        });
+        $('#menu').hide()
+        $('.close-menu').click(function () {
+            $('#menu').fadeOut()
+            $('body').css('overflow-y','scroll')
+        })
+        $('.menu-btn').click(function () {
+            $('#menu').fadeIn()
+            $('body').css('overflow-y','hidden')
+        })
+        
+    </script>
+</body>
+
+</html>

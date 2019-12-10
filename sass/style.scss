@@ -1,0 +1,31 @@
+//----------------------------
+//------Main Style File-------
+//----------------------------
+
+@font-face{
+    font-family:'JF Flat';
+    src: url('../fonts/JF-Flat-regular.woff') format("woff");
+}
+// *{
+//     outline: 1px solid red;
+// }
+body{
+    font-family: 'JF Flat';
+    direction: rtl;
+    font-size: 15px;
+    background: #f7f7f7;
+}
+@import 'helper/framework';
+
+@import 'layout/header';
+@import 'layout/footer';
+
+@import 'component/nav';
+@import 'component/slider';
+@import 'component/breadcrumb';
+
+@import 'pages/about';
+@import 'pages/departments';
+@import 'pages/doctors';
+@import 'pages/doctorInfo';
+@import 'pages/login';

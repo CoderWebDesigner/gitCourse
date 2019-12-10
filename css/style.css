@@ -1,0 +1,320 @@
+@font-face {
+  font-family: 'JF Flat';
+  src: url("../fonts/JF-Flat-regular.woff") format("woff");
+}
+body {
+  font-family: 'JF Flat';
+  direction: rtl;
+  font-size: 15px;
+  background: #f7f7f7;
+}
+
+.list-style-none {
+  list-style: none;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.xs-font {
+  font-size: 11px !important;
+}
+
+.sm-font {
+  font-size: 13px !important;
+}
+
+header {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+footer {
+  background: #333;
+}
+footer .social-media-list {
+  border-color: #272b2f !important;
+}
+footer .social-media-list li {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 10px;
+}
+
+.navbar-brand {
+  width: 130px;
+}
+
+.menu-btn span {
+  display: inline-block;
+  width: 30px;
+  height: 2px;
+  border-radius: 10px;
+  background: #535353;
+  position: absolute;
+  left: 30px;
+}
+.menu-btn span:nth-of-type(2) {
+  top: 60px;
+}
+.menu-btn span:nth-of-type(3) {
+  top: 70px;
+}
+
+#menu {
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+}
+#menu .close-menu {
+  top: 50px;
+  left: 50px;
+  font-size: 30px;
+}
+#menu .menu-list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.carousel-wrap {
+  z-index: -1;
+  top: 0;
+}
+.carousel-wrap .owl-item .item::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+.carousel-wrap .owl-item .item .circle {
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.carousel-wrap .owl-item .item .details {
+  position: absolute;
+  left: 30%;
+  top: 50%;
+  transform: translate(-20%, -50%);
+}
+.carousel-wrap .owl-item:nth-of-type(even) .circle {
+  background: rgba(184, 152, 83, 0.6);
+}
+.carousel-wrap .owl-item:nth-of-type(odd) .circle {
+  background: rgba(100, 51, 152, 0.6);
+}
+
+.breadcrumb-section {
+  position: relative;
+  background-size: cover;
+}
+.breadcrumb-section .breadcrumb-item {
+  color: #fff;
+  z-index: 2;
+  font-size: 19px;
+}
+.breadcrumb-section .breadcrumb-item a {
+  color: #fff;
+}
+.breadcrumb-section .breadcrumb-item::before {
+  color: #fff;
+  font-size: 19px;
+  padding-left: .5rem;
+}
+.breadcrumb-section::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 30%;
+  background: rgba(189, 33, 48, 0.6);
+  z-index: 1;
+}
+
+.about .sub-section img {
+  height: 35px;
+}
+.about .sub-section p {
+  font-size: 13px;
+}
+
+.chairman-board {
+  padding: 3% 0;
+  background: url("../../img/background.png");
+  background-size: cover;
+}
+.chairman-board .title {
+  padding: 5% 0;
+}
+.chairman-board .description p {
+  padding: 5% 10%;
+  box-shadow: 1px 1px 10px #ddd;
+}
+.chairman-board .description p a {
+  display: block;
+  margin-top: 30px;
+  padding-right: 30px;
+  position: relative;
+}
+.chairman-board .description p a::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 1px;
+  background: #b2b2b2;
+  right: 0;
+  top: 10px;
+}
+
+.doctors {
+  padding: 5% 0;
+}
+.doctors h3 {
+  margin-bottom: 40px;
+}
+.doctors .doctor-list .doctor-img img {
+  height: 260px;
+  width: 100%;
+}
+.doctors .doctor-list .doctor-info h5 {
+  padding: 10px;
+}
+.doctors .doctor-list .doctor-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 12px;
+}
+
+.others img {
+  width: 100px;
+}
+.others h3 {
+  line-height: 2.2;
+}
+
+.titleSection {
+  background: url("../../img/slider/Untitled-2.png");
+  background-size: cover;
+  background-position: fixed;
+  padding: 50px 0;
+}
+
+.department .item img {
+  height: 85px;
+}
+
+.doctors .doctor {
+  background: #fbfbfb;
+  transform: scale(1);
+  transition: transform .4s ease-in-out;
+}
+.doctors .doctor__img--img {
+  height: 160px;
+  background-size: cover;
+}
+.doctors .doctor__mainInfo {
+  bottom: 0;
+}
+.doctors .doctor:hover {
+  transform: scale(1.1);
+}
+
+.ratting a {
+  font-size: 25px;
+}
+
+.pignose-calendar {
+  width: auto !important;
+  max-width: none !important;
+}
+
+/* Start Login & Register Section */
+.login-register-section {
+  background: #3e4651;
+  width: 90%;
+  margin: 70px auto;
+  padding: 20px 40px;
+  position: relative;
+}
+.login-register-section .login-register-info {
+  color: #fff;
+}
+.login-register-section .login-register-form {
+  background: #fff;
+  height: 123%;
+  position: absolute;
+  top: -12%;
+  padding: 50px 30px;
+  box-shadow: 1px 1px 10px #595959;
+  left: 30px;
+  right: 50%;
+  transition: left 0.5s ease-in-out, right 0.5s ease-in-out;
+}
+.login-register-section .login-info,
+.login-register-section .register-info {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.login-register-section .login-info .login-button, .login-register-section .login-info .register-button,
+.login-register-section .register-info .login-button,
+.login-register-section .register-info .register-button {
+  color: #fff;
+  background: transparent;
+  border-color: #fff;
+  padding: 5px 60px;
+  margin-top: 30px;
+}
+.login-register-section .login-info p,
+.login-register-section .register-info p {
+  margin-top: 20px;
+}
+.login-register-section .login-form h3,
+.login-register-section .register-form h3 {
+  margin-bottom: 30px;
+  margin-top: 20px;
+  color: #643398;
+}
+.login-register-section .login-form form button,
+.login-register-section .register-form form button {
+  background: #643398;
+  color: #fff;
+  padding: 5px 0;
+  display: block;
+  width: 116%;
+  margin-right: -15px;
+}
+.login-register-section .login-form form a,
+.login-register-section .register-form form a {
+  color: #333;
+  margin: 8px 0;
+  display: block;
+}
+.login-register-section .login-form form a:hover,
+.login-register-section .register-form form a:hover {
+  text-decoration: underline !important;
+}
+
+.transform {
+  left: 50% !important;
+  right: 30px !important;
+}
+
+/* End Login & Register Section */
+
+/*# sourceMappingURL=style.css.map */

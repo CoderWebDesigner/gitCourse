@@ -1,0 +1,55 @@
+.carousel-wrap {
+    z-index: -1;
+    top: 0;
+
+    .owl-item {
+        .item {
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(0, 0, 0, .3);
+                z-index: 1;
+
+            }
+
+            .circle {
+                width: 450px;
+                height: 450px;
+                border-radius: 50%;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 2;
+
+
+            }
+            .details{
+                position: absolute;
+                left: 30%;
+                top: 50%;
+                transform: translate(-20%, -50%);
+            }
+
+        }
+
+        &:nth-of-type(even) {
+            .circle {
+                background: rgba($color: #b89853, $alpha: .6);
+            }
+
+        }
+
+        &:nth-of-type(odd) {
+            .circle {
+                background: rgba($color: #643398, $alpha: .6);
+            }
+
+        }
+    }
+
+}
